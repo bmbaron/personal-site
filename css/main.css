@@ -1,102 +1,87 @@
-
-body {
-    background-color: rgb(64,67,74) !important;
-    overflow-y:scroll;
-    overflow-x:hidden; 
-
-}
-  
-.wrapper {
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  z-index:10;
-  height: 200px;
+body {  
+  overflow-x:hidden;
 }
 
-.input-area {
-  
-  border-radius:10px;
-  position:relative;
-  margin:15% auto 10% auto;
-  width:450px;
-  padding:25px 50px;
-  display:table;
-  background-color:#fff;
-  font-size: 20px;
-  text-align: center; 
-  border: 2px solid rgb(64,67,74);
-  -webkit-transition: top .5s .5s ease-out;
-
-}
-.shadow, .wikiEntry {
--moz-box-shadow: 0 0 30px 5px #999;
--webkit-box-shadow: 0 0 30px 5px #999;
+#social-media a {
+    text-decoration:none;
 }
 
-.searchBox {
-  
-  position:relative;
-  margin:2% auto auto auto;
-  width:450px;
-
+#section-list a {
+    text-decoration:none;
 }
-  
-  .buttons {
-    width:100%;
-    height:100%;
-    text-align: center;    
-    margin:5% auto auto auto;
 
+#intro a {
+    text-decoration:none;
+}
+
+#panel {
+  background: url(https://s-media-cache-ak0.pinimg.com/236x/46/b1/dd/46b1dd2e64368ad391ee0336f2013db5.jpg);
+  background-size:auto;
 }
 
 
-.wikiEmpty{
-    border-radius:10px;
-    font-weight:500;
-    font-size:3em;
-    font-family: Bookman Old Style;
-    color: white;
-    width:50%;
-    height:100%;
-    text-align: center;    
-    margin: -20% auto auto auto;
+div.pagewidth {
+  display:block;
+  border-style:solid;
+  border-color:black;
+  height:100vh;
+  overflow:hidden;
 }
 
-
-    .wikiEntry{
-    width:75%;
-    text-align: left;
-    height: auto;
-    margin: 0% auto 0% auto;
-    position: relative;
-    background-color: white;
-   }
-
-a {
-    display: block;      
-    font-weight:500;
-    font-size:1.75em;
-    font-family: Bookman Old Style;
-    margin: 0% auto 0% auto;
-    cursor: pointer;
-    word-wrap: break-word;  
-    height: auto;
-    padding: 20px 20px;
-
-
+.fixed-position-left {
+  position : fixed;
+  /*  <!-- the z-index for the navigation panel must have been lowered (or the subsequent divs must have pushed it below) so this is necessay to "raise" the z-index so that the html links are not hidden underneath-->*/
+  z-index:1;
+  top:0;
+  left:0;
 }
-  a.links {
-    text-decoration: none;
-    color: black;
+.fixed-position-right {
+  position : fixed;
+  /*  <!-- the z-index for the navigation panel must have been lowered (or the subsequent divs must have pushed it below) so this is necessay to "raise" the z-index so that the html links are not hidden underneath-->*/
+  z-index:1;
+  top:0;
+  right:0;
+}
+
+.button {
+  display: block;
+  width: 140px;
+  margin:0px 10px;
+  height: 75px;
+  background: black;
+  padding: 0px;
+  border-radius: 20px;
+  color: white;
+  font-size:20px;
+  font-weight: bold;
+  box-shadow: 0 0 5px 5px #888;
+  line-height: 60px; /*or you could use 4em*/
+  text-decoration:none;
   }
- a:hover {
- }
-
-.wikiData {
-  position: relative;
-  margin: 30% auto auto auto;
-  z-index: 0;  
+.button:hover {
+   color: white;
+   text-decoration: none;  
 }
 
 
+
+
+.section {
+  display: block;
+  width: auto;
+  margin:10px 10px;
+  height: auto;
+  background: black;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+#intro {
+      background: url(https://github.com/bmbaron/FilesForFreeCodeCamp/blob/master/1614458_646285548760323_751417938_o.jpg?raw=true);
+  background-size:cover;
+}  
+
+
+
+/*img {width=75%; height: 75%; } */
