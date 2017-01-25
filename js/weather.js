@@ -12,11 +12,10 @@ weather.mist1 = "50";
 var keys = Object.keys(weather); 
 
 $(document).ready(function() {
-  console.log('1');
+  
 var coordinates = [];
 var temperature = 0;
- 
-$.ajaxSetup({ cache: false });
+
 if (navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(function(position) {
   
@@ -31,8 +30,6 @@ coordinates[1] = lon.toString();
 
 getWeatherAndDisplay();
   
-    console.log('2');
-
 });
 }
 
@@ -40,17 +37,15 @@ getWeatherAndDisplay();
 
 
 function getWeatherAndDisplay() { 
-   console.log('3');
-
+ 
     //$.getJSON("http://api.openweathermap.org/data/2.5/weather?units=metric&lat=42&lon=73&APPID=eaf607284a508b29627f7369b57bc03d&callback=?",function(json){
-  $.getJSON("https://api.openweathermap.org/data/2.5/weather?units=metric&lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?",function(json){
-    console.log('4');
-    console.log('https://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + coordinates[0] + '&lon=' + coordinates[1] + '&APPID=eaf607284a508b29627f7369b57bc03d&callback=?');
+  $.getJSON("http://api.openweathermap.org/data/2.5/weather?units=metric&lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?",function(json){
+    
     //"http://api.openweathermap.org/data/2.5/weather?lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?"
     
   $(".city").html(json.name +","); 
   $(".country").html(json.sys.country); 
-  $(".temperature").html("temperature: " + (Math.round(json.main.temp)) + "°C"); 
+  $(".temperature").html("temperature: " + (Math.round(json.main.temp)) + "Â°C"); 
   temperature = json.main.temp;
   $(".conditions").html("conditions: " + json.weather[0].description);
               
@@ -80,13 +75,13 @@ $("#button").on("click", function() {
   //if the button has been clicked an even amount of times, convert to Fahrenheit and display
   if (clicked%2 == 0) {     
     temperature = Math.round((9/5*temperature)+32);
-    $(".temperature").html("temperature: " + temperature + "°F");      
+    $(".temperature").html("temperature: " + temperature + "Â°F");      
     $(".button").html("Convert to Celsius");             
   }
   //if the button has been clicked an odd amount of times, convert to Celsius and display
   else{       
     temperature = Math.round(5/9*(temperature-32));
-    $(".temperature").html("temperature: " + temperature + "°C");      
+    $(".temperature").html("temperature: " + temperature + "Â°C");      
     $(".button").html("Convert to Fahrenheit");             
   }
      
