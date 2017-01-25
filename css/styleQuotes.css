@@ -1,0 +1,71 @@
+
+body {
+    background: rgb(64,67,74) !important;
+    overflow-y:auto;
+    overflow-x:hidden; 
+}
+
+.title1 {
+  margin-left:13%;
+  width:100%;
+  height: 50px;
+  text-align: left;
+  background-color: rgb(236,151,31);
+  font-size: 40px;
+  font-family: arial;
+  border-radius:10px;
+  text-indent: .5em;
+
+
+}
+
+.title2 {
+  margin-left: 16%;
+  width:100%;
+  height: 50px;
+  background-color: rgb(68,157,68);
+  font-size: 40px;
+  font-family: arial;
+  border-radius:10px;
+  text-indent: .5em;
+
+}
+    
+    
+.quote-area {
+  
+  border-radius:10px;
+  position:relative;
+  margin:2% auto auto auto;
+  width:450px;
+  padding:50px 50px;
+  display:table;
+  background-color:#fff;
+  font-size: 20px;
+
+}
+  
+  .quote-text {
+       
+    text-align:center;
+    width:450px;
+    height:auto;
+    font-weight:500;
+    font-size:1.75em;
+    font-family: arial;
+  }
+  .quote-author {    
+    
+    text-align:right;
+    width:450px;
+    height:auto;
+    clear:both;
+    padding-top:20px;
+    font-family: arial;
+  }
+  .buttons {
+    width:100%;
+    height:100%;
+    text-align: center;    
+    margin:2% auto auto auto;
+}
