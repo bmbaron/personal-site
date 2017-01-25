@@ -15,7 +15,8 @@ $(document).ready(function() {
   console.log('1');
 var coordinates = [];
 var temperature = 0;
-
+ 
+$.ajaxSetup({ cache: false });
 if (navigator.geolocation) {
 navigator.geolocation.getCurrentPosition(function(position) {
   
