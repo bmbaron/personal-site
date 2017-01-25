@@ -1,43 +1,87 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+body {  
+  overflow-x:hidden;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+#social-media a {
+    text-decoration:none;
 }
 
-ul.posts li {
-    list-style: none;
+#section-list a {
+    text-decoration:none;
 }
+
+#intro a {
+    text-decoration:none;
+}
+
+#panel {
+  background: url(https://s-media-cache-ak0.pinimg.com/236x/46/b1/dd/46b1dd2e64368ad391ee0336f2013db5.jpg);
+  background-size:auto;
+}
+
+
+div.pagewidth {
+  display:block;
+  border-style:solid;
+  border-color:black;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fixed-position-left {
+  position : fixed;
+  /*  <!-- the z-index for the navigation panel must have been lowered (or the subsequent divs must have pushed it below) so this is necessay to "raise" the z-index so that the html links are not hidden underneath-->*/
+  z-index:1;
+  top:0;
+  left:0;
+}
+.fixed-position-right {
+  position : fixed;
+  /*  <!-- the z-index for the navigation panel must have been lowered (or the subsequent divs must have pushed it below) so this is necessay to "raise" the z-index so that the html links are not hidden underneath-->*/
+  z-index:1;
+  top:0;
+  right:0;
+}
+
+.button {
+  display: block;
+  width: 140px;
+  margin:0px 10px;
+  height: 75px;
+  background: black;
+  padding: 0px;
+  border-radius: 20px;
+  color: white;
+  font-size:20px;
+  font-weight: bold;
+  box-shadow: 0 0 5px 5px #888;
+  line-height: 60px; /*or you could use 4em*/
+  text-decoration:none;
+  }
+.button:hover {
+   color: white;
+   text-decoration: none;  
+}
+
+
+
+
+.section {
+  display: block;
+  width: auto;
+  margin:10px 10px;
+  height: auto;
+  background: black;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+#intro {
+      background: url(https://github.com/bmbaron/FilesForFreeCodeCamp/blob/master/1614458_646285548760323_751417938_o.jpg?raw=true);
+  background-size:cover;
+}  
+
+
+
+/*img {width=75%; height: 75%; } */
