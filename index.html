@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css"
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ben</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
-
-	</head>
+      <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body style="font-family:Rockwell;">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
   
   <div class="fixed-position-left text-center" style="transparency:1; border-radius:15px; margin-top:30px;" id="social-media">
     <!--<h1 class="section text-center" style="font-size:30px; text-decoration:underline;">Social Media</h1>-->
@@ -154,45 +157,11 @@ Article 2: http://www.developafrica.org/blog/difficult-life-child-senegal -->
 
 
 </body>
-  
+	
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src="js/index.js"></script>
+	
+	
 </html>
 	
-	
-<script> 
-	
-	$(window).load(function() {
-
-
-	$('.button').mouseover(function(){
-	    $(this).stop().effect('shake', {distance:5}, 1000);
-	}); //end mouseover shake function
-
-	var img;
-	var width;
-
-
-	$(".pic").hover(function(){
-
-	  width = 2*$(this).width(); 
-	  $(this).width(width); //make the image twice as big
-
-	}, function(){  
-
-	   width=.5*width; 
-	   $(this).width(width); //return image back to original size
-
-	}); //end pic hover function 
-
-	}); //end window load function
-
-	/*
-	var element_to_scroll_to = document.getElementById('section1');
-
-	$('#Sect1').on('click', function(event) {
-	  event.preventDefault(); // To prevent following the link (optional
-	  element_to_scroll_to.scrollIntoView({behavior: "smooth"});
-	  console.log("Clicked");
-	}); 
-	*/
-
-</script>
