@@ -50,8 +50,6 @@ function getWeatherAndDisplay() {
 
   $.getJSON(website,function(json){
   
-  alert(website);
-
     //"http://api.openweathermap.org/data/2.5/weather?lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?"
     
   $(".city").html(json.name +","); 
