@@ -10,7 +10,7 @@ $(document).ready(function() {
       
       type: 'GET',
       dataType: "jsonp",
-      url: "http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&key=10&lang=en&jsonp=?",
+      url: "//api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&key=10&lang=en&jsonp=?",
       jsonpCallback: "parseQuote" 
 
     });    
