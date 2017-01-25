@@ -1,0 +1,58 @@
+
+body {
+    background: rgb(64,67,74) !important;
+}
+    
+.weather-box{
+  
+  border-radius:10px;
+  position:relative;
+  margin:1% auto auto auto;
+  width:450px;
+  padding:30px 50px;
+  display:table;
+  background-color:#fff;
+  font-size: 20px;
+
+}
+
+  .location{
+    text-align:center;
+    width:450px;
+    height:auto;
+    font-weight:500;
+    font-size:1.75em;
+    font-family: arial;
+  }
+  .data{
+    text-align:center;
+    width:450px;
+    height:auto;
+    font-weight:500;
+    font-size:1em;
+    font-family: arial;
+  }
+  .button {
+    width:100%;
+    height:100%;
+    text-align: center;    
+    margin:5% auto auto auto;
+}
+
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+
+ .image {
+    border:10px;
+    border-radius: 10px;
+    width:200px;
+    height:200px;
+    margin-left: 125px;
+    margin-top: 20px;
+    border:1px solid black;
+}
+
+
