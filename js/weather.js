@@ -24,6 +24,8 @@ var lon = position.coords.longitude;
   
 coordinates[0] = lat.toString();
 coordinates[1] = lon.toString();
+
+alert(coordinates[0]);
     
 //$(".latitude").html(coordinates[0]);
 //$(".longitude").html(coordinates[1]);
@@ -39,7 +41,7 @@ getWeatherAndDisplay();
 function getWeatherAndDisplay() { 
  
     //$.getJSON("http://api.openweathermap.org/data/2.5/weather?units=metric&lat=42&lon=73&APPID=eaf607284a508b29627f7369b57bc03d&callback=?",function(json){
-  $.getJSON("http://api.openweathermap.org/data/2.5/weather?units=metric&lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?",function(json){
+  $.getJSON("//api.openweathermap.org/data/2.5/weather?units=metric&lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?",function(json){
     
     //"http://api.openweathermap.org/data/2.5/weather?lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?"
     
