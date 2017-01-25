@@ -12,6 +12,7 @@ weather.mist1 = "50";
 var keys = Object.keys(weather); 
 
 $(document).ready(function() {
+  alert("Hello");
   
 var coordinates = [];
 var temperature = 0;
