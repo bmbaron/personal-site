@@ -44,12 +44,11 @@ function getWeatherAndDisplay() {
  
     //$.getJSON("http://api.openweathermap.org/data/2.5/weather?units=metric&lat=42&lon=73&APPID=eaf607284a508b29627f7369b57bc03d&callback=?",function(json){
   var website = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + coordinates[0] + '&lon=' + coordinates[1] + '&APPID=eaf607284a508b29627f7369b57bc03d&callback=?';
-  alert('website');
 
   alert(website);
 
 
-  $.getJSON(url,function(json){
+  $.getJSON('"' + website + '"',function(json){
   
     //"http://api.openweathermap.org/data/2.5/weather?lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?"
     
