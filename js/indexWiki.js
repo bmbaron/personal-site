@@ -1,7 +1,5 @@
 
 $(document).ready(function() {
-        alert("Hi");
-
         
   initialize();
   document.getElementById('wikiEmpty').innerHTML = '';
@@ -60,7 +58,7 @@ $("#search-button").on("click", function(e) {
   //the callback function, processJSON which handles the JSON and displays the desired data will be called upon completion
   function summonJSON() {        
     $.ajax({
-      url: "http://en.wikipedia.org/w/api.php?action=opensearch&search=" + document.getElementById('search').value + "&format=json",
+      url: "//en.wikipedia.org/w/api.php?action=opensearch&search=" + document.getElementById('search').value + "&format=json",
       dataType: "jsonp",
       jsonpCallback: "processJSON"
     });  
