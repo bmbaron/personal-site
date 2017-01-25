@@ -1,4 +1,7 @@
+
 $(document).ready(function() {
+        alert("Hi");
+
         
   initialize();
   document.getElementById('wikiEmpty').innerHTML = '';
