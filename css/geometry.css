@@ -1,0 +1,230 @@
+
+html {
+    animation: fadein 2s;
+}
+  
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+ 
+.text {
+  border-radius: 50%;
+  position: fixed;
+  text-align: center;
+  width: 10%;
+  height: 5%;
+  opacity:0;
+  z-index:-1;
+  background-color: black;
+  
+  animation-name: textIn;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.text1 {
+  left: 5%;
+  top: 40%;  
+}
+.text2 {
+  left: 37%;
+  top: 90%;  
+}
+.text3 {
+  left: 85%;
+  top: 55%;  
+}
+.text4 {
+  left: 50%;
+  top: 5%;  
+}
+
+
+
+
+
+
+.hover1{
+  position: absolute; 
+  width: 15%;
+  height: 30%;
+  background-color: orange;
+  border-top-right-radius: 20%;
+  text-align: right;
+}
+
+.box1 { 
+  position: fixed; 
+  width: 7.5%;
+  height: 15%;
+  left:50%; 
+  bottom:50%; 
+  background-color: orangeRed;
+  z-index: 1;
+  border-top-right-radius: 100%;
+}
+
+.hover2 {
+  position: absolute; 
+  width: 15%;
+  height: 30%;
+  background-color: brown;
+  border-top-left-radius: 20%;
+  text-align: left;
+}
+
+.box2 { 
+  position: fixed; 
+  width: 7.5%;
+  height: 15%;
+  right:50%; 
+  bottom:50%; 
+  background-color: teal;
+  z-index: 1;
+  border-top-left-radius: 100%;
+}
+
+.hover3{
+  position: absolute; 
+  width: 15%;
+  height: 30%;
+  background-color: purple;
+  border-bottom-right-radius: 20%;
+}
+
+.box3 { 
+  position: fixed; 
+  width: 7.5%;
+  height: 15%;
+  left:50%; 
+  top:50%; 
+  background-color: seaGreen;
+  z-index: 1;
+  border-bottom-right-radius: 100%;
+}
+.hover4 {
+  position: absolute; 
+  width: 15%;
+  height: 30%;
+  background-color: green;
+  border-bottom-left-radius: 20%;
+  text-align: left;
+}
+.box4 { 
+  position: fixed; 
+  width: 7.5%;
+  height: 15%;
+  right:50%; 
+  top:50%; 
+  background-color: salmon;
+  z-index: 1;
+  border-bottom-left-radius: 100%;
+}
+
+
+
+.hover1:hover .box1 {
+  z-index:10;
+  animation-name: fadeOut1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.hover1:hover .text{
+  animation-name: textIn;
+  animation-play-state: running; 
+}
+
+.hover2:hover .box2 {
+  z-index:10;
+  animation-name: fadeOut2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.hover2:hover .text{
+  animation-play-state: running; 
+}
+
+.hover3:hover .box3 {
+  animation-name: fadeOut3;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.hover3:hover .text{
+  animation-play-state: running; 
+}
+
+.hover4:hover .box4 {
+  animation-name: fadeOut4;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.hover4:hover .text{
+  animation-play-state: running; 
+}
+
+
+.box1:not( :hover ){  
+  animation-name: fadeIn1;
+  animation-duration: 2s; 
+}
+.box2:not( :hover ){
+  animation-name: fadeIn2;
+  animation-duration: 2s;  
+}
+.box3:not( :hover ){
+  animation-name: fadeIn3;
+  animation-duration: 2s;  
+}
+.box4:not( :hover ){
+  animation-name: fadeIn4;
+  animation-duration: 2s;  
+}
+
+
+@keyframes fadeOut1 {
+  from {background-color; left;}
+  to {background-color: black; left:20%; opacity: 0.01;}
+}
+@keyframes textIn {
+  from {opacity:0; left; z-index;}
+  to {opacity:1; left: 45%; z-index:100;}
+}
+
+@keyframes fadeOut2 {
+  from {background-color; bottom;}
+  to {background-color: black; bottom:5%; opacity: 0.01;}
+}
+@keyframes fadeOut3 {
+  from {background-color; top;}
+  to {background-color: black; top:5%; opacity: 0.01;}
+}
+@keyframes fadeOut4 {
+  from {background-color; right;}
+  to {background-color: black; right:20%; opacity: 0.01;}
+}
+
+@keyframes fadeIn1 {
+  from {background-color: black; left:20%; z-index:200; opacity: 0.01;}
+  to {background-color; left; z-index;}
+}
+@keyframes fadeIn2 {
+  from  {background-color: black; bottom:5%; z-index:100; opacity: 0.01;}
+  to {background-color; bottom; z-index;}
+}
+@keyframes fadeIn3 {
+  from  {background-color: black; top:5%; opacity: 0.01;}
+  to  {background-color; top;}
+}
+@keyframes fadeIn4 {
+  from {background-color: black; right:20%; opacity: 0.01;}
+  to {background-color; right;}
+}
+
+
+.text:hover {
+  
+  color:white;
+}
