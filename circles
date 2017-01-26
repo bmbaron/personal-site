@@ -1,0 +1,16 @@
+<head>
+  <link rel="stylesheet" href="css/circles.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="button"> pause
+  <div class="Bcircle red"> </div> 
+  <div class="Bcircle blue"> </div> 
+  <div class="Bcircle green"> </div>
+  <div class="Bcircle orange"> </div> 
+  <div>
+</div>
+
+</body>
