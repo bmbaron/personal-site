@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>geometry</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/geometry.css">
+
+  
+</head>
+
+<body>
+  
+<div class = "hover1" style = "left:50%; bottom:50%;">
+<div class = "box1"></div>
+<div class = "text text1"> passed </div>
+
+</div>
+
+
+<div class = "hover2" style = "right:50%; bottom:50%;">
+<div class = "box2"></div>
+<div class = "text text2"> test </div>
+</div>
+
+<div class = "hover3" style = "left:50%; top:50%;"> 
+<div class = "box3"></div>
+<div class = "text text4"> you </div>
+
+</div>
+
+<div class = "hover4" style = "right:50%; top:50%;">
+<div class = "box4"></div>
+<div class = "text text3"> the </div>
+
+</div>
+  
+  
+</body>
+</html>
