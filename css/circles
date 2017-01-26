@@ -1,0 +1,105 @@
+body, html {
+  height: 100%;
+  cursor: pointer;
+
+}
+
+.wrapper {
+  margin:auto;
+  width:100%;
+  height:100%;
+}
+
+.button {
+  position:fixed;
+  background-color:grey;
+  height:50px;
+  width:200px;
+  left:41%;
+  top: 2%;
+  color: white;
+  text-align:center;
+  line-height:100px;
+  font-family: harlow solid italic;
+  font-size:40px;
+}
+
+.button:hover .red {
+  animation-play-state: paused;
+}
+.button:hover .blue {
+  animation-play-state: paused;
+}
+.button:hover .green {
+  animation-play-state: paused;
+}
+.button:hover .orange {
+  animation-play-state: paused;
+}
+
+.Bcircle {
+  width:100px;
+  height:100px;
+  margin: auto auto;
+  margin-top: 50vh;  
+  border-radius:100%;
+  opacity:1;
+}
+.button {
+  position:fixed;
+  width:100px;
+  height:100px;
+  margin: auto auto;
+  margin-top: 50vh;  
+  border-radius:100%;
+  opacity:1;
+  background-color:black;
+  left: 45%;
+  top: 1%;
+}
+.red {
+  position: fixed;
+  background-color: red;
+  animation: redA 2s infinite;
+  left: 45%;
+  top: 1%;
+}
+.blue {
+  position: fixed;
+  background-color: blue;
+  animation: blueA 2s infinite;
+  left: 45%;
+  top: 1%;
+}
+.green {
+  position: fixed;
+  background-color: green;
+  animation: greenA 2s infinite;
+  left: 45%;
+  top: 1%;
+}
+.orange {
+  position: fixed;
+  background-color: orange;
+  animation: orangeA 2s infinite;
+  left: 45%;
+  top: 1%;
+}
+
+
+@keyframes redA {
+  from {opacity; top; left;}
+  to {opacity:.2; top:20%; left:30%;}
+}
+@keyframes blueA {
+  from {opacity; top; left;}
+  to {opacity:.2; top:-20%; left:60%;}
+}
+@keyframes greenA {
+  from {opacity; top; left;}
+  to {opacity:.2; top:20%; left:60%;}
+}
+@keyframes orangeA {
+  from {opacity; top; left;}
+  to {opacity:.2; top:-20%; left:30%;}
+}
