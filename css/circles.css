@@ -1,49 +1,24 @@
 body, html {
   height: 100%;
   cursor: pointer;
-
+  overflow-y: hidden;
 }
 
-.wrapper {
-  margin:auto;
-  width:100%;
-  height:100%;
+.header {
+    font-family: harlow solid italic;
+  font-size:60px;
+  text-align:center;
+
+  
 }
 
-.button {
+ .wrapper {
   position:fixed;
   background-color:grey;
-  height:50px;
-  width:200px;
-  left:41%;
-  top: 2%;
-  color: white;
-  text-align:center;
-  line-height:100px;
-  font-family: harlow solid italic;
-  font-size:40px;
-}
-
-.button:hover .red {
-  animation-play-state: paused;
-}
-.button:hover .blue {
-  animation-play-state: paused;
-}
-.button:hover .green {
-  animation-play-state: paused;
-}
-.button:hover .orange {
-  animation-play-state: paused;
-}
-
-.Bcircle {
-  width:100px;
-  height:100px;
-  margin: auto auto;
-  margin-top: 50vh;  
-  border-radius:100%;
-  opacity:1;
+  height:100%;
+  width:100%;
+  left:0;
+  right:0;
 }
 .button {
   position:fixed;
@@ -56,13 +31,36 @@ body, html {
   background-color:black;
   left: 45%;
   top: 1%;
+  font-family: harlow solid italic;
+  font-size:40px;
+  color: white;  
+  line-height:100px;
+  z-index:11;
+
 }
+
+.button:hover .Bcircle {
+  animation-play-state: paused;
+}
+
+.Bcircle {
+  width:100px;
+  height:100px;
+  margin: auto auto;
+  margin-top: 50vh;  
+  border-radius:100%;
+  opacity:1;
+  z-index:1;
+  pointer-events: none;
+}
+
 .red {
   position: fixed;
   background-color: red;
   animation: redA 2s infinite;
   left: 45%;
   top: 1%;
+  z-index:1;
 }
 .blue {
   position: fixed;
@@ -70,6 +68,7 @@ body, html {
   animation: blueA 2s infinite;
   left: 45%;
   top: 1%;
+  z-index:1;
 }
 .green {
   position: fixed;
@@ -77,6 +76,7 @@ body, html {
   animation: greenA 2s infinite;
   left: 45%;
   top: 1%;
+  z-index:1;
 }
 .orange {
   position: fixed;
@@ -84,6 +84,7 @@ body, html {
   animation: orangeA 2s infinite;
   left: 45%;
   top: 1%;
+  z-index:1;
 }
 
 
