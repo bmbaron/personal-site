@@ -24,8 +24,6 @@ var lon = position.coords.longitude;
   
 coordinates[0] = lat.toString();
 coordinates[1] = lon.toString();
-
-alert("Your coordinates are:" + coordinates[0] + "," + coordinates[1]);
     
 //$(".latitude").html(coordinates[0]);
 //$(".longitude").html(coordinates[1]);
