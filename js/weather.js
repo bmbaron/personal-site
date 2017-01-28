@@ -25,7 +25,7 @@ var lon = position.coords.longitude;
 coordinates[0] = lat.toString();
 coordinates[1] = lon.toString();
 
-alert(coordinates[0]);
+alert("Your coordinates are:" coordinates[0] + "," + coordinates[1]);
     
 //$(".latitude").html(coordinates[0]);
 //$(".longitude").html(coordinates[1]);
@@ -39,18 +39,14 @@ getWeatherAndDisplay();
 
 
 function getWeatherAndDisplay() { 
-  alert("try");
 
  
     //$.getJSON("http://api.openweathermap.org/data/2.5/weather?units=metric&lat=42&lon=73&APPID=eaf607284a508b29627f7369b57bc03d&callback=?",function(json){
-  var website = 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + coordinates[0] + '&lon=' + coordinates[1] + '&APPID=eaf607284a508b29627f7369b57bc03d&callback=?';
+  var website = 'http://api.openweathermap.org/data/2.5/weather?units=metric&lat=' + coordinates[0] + '&lon=' + coordinates[1] + '&APPID=eaf607284a508b29627f7369b57bc03d&callback=?';
   website = '"' + website + '"';
-  alert(website);
 
 
   $.getJSON(website,function(json){
-  var x = 11;
-    alert(x);
     
     //"http://api.openweathermap.org/data/2.5/weather?lat=" + coordinates[0] + "&lon=" + coordinates[1] + "&APPID=eaf607284a508b29627f7369b57bc03d&callback=?"
     
