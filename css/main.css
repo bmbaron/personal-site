@@ -1,87 +1,126 @@
-body {  
+body, html {
+  font-family:Rockwell;
+  background-color:maroon;
+  color:white;
+  text-decoration:none;
   overflow-x:hidden;
-}
 
-#social-media a {
-    text-decoration:none;
 }
-
-#section-list a {
-    text-decoration:none;
-}
-
-#intro a {
-    text-decoration:none;
-}
-
-#panel {
-  background: url(https://s-media-cache-ak0.pinimg.com/236x/46/b1/dd/46b1dd2e64368ad391ee0336f2013db5.jpg);
-  background-size:auto;
-}
-
 
 div.pagewidth {
   display:block;
-  border-style:solid;
-  border-color:black;
   height:100vh;
   overflow:hidden;
 }
 
-.fixed-position-left {
-  position : fixed;
-  /*  <!-- the z-index for the navigation panel must have been lowered (or the subsequent divs must have pushed it below) so this is necessay to "raise" the z-index so that the html links are not hidden underneath-->*/
+.name {
+  font-size:40px;
+  margin-top:5%;
+}
+
+.quest {
+   padding-top:1%;
+  padding-bottom:2%;
+  font-size:20px;
+  text-align:right;
+}
+
+
+a, a:hover, a:active, a:focus {
+  color:white;  
+  outline:0;
+  text-decoration:none;
+}
+
+.panelLeft {
+  position:fixed;
   z-index:1;
+  
+  width:17%;  
   top:0;
+  margin-top:30px; 
+  padding-right:1%;
+  left:-9%;
+  
+  background-color:grey;
+  
+  text-align:right;
+  color:black;
+}
+
+.panelLeft:hover{
   left:0;
 }
-.fixed-position-right {
-  position : fixed;
-  /*  <!-- the z-index for the navigation panel must have been lowered (or the subsequent divs must have pushed it below) so this is necessay to "raise" the z-index so that the html links are not hidden underneath-->*/
+
+.panelRight {
+  position:fixed;
   z-index:1;
+    
+  width: 17%;
   top:0;
+  margin-top:30px;
+  right:-9%;
+  padding-left:1%;
+
+  
+  background-color:grey;
+  
+  text-align:left;
+  color:black;
+}
+
+.panelRight:hover {
   right:0;
 }
 
 .button {
-  display: block;
-  width: 140px;
-  margin:0px 10px;
-  height: 75px;
-  background: black;
-  padding: 0px;
-  border-radius: 20px;
-  color: white;
-  font-size:20px;
-  font-weight: bold;
-  box-shadow: 0 0 5px 5px #888;
-  line-height: 60px; /*or you could use 4em*/
+  width:140px;
+  height:75px;
+  padding:0px;
+  z-index:2;
+
+  display:block;
+  background:black;
+  
+  font-size:12px;
+  line-height:75px;
   text-decoration:none;
-  }
-.button:hover {
-   color: white;
-   text-decoration: none;  
+  color:white;
+  text-align:center;
 }
 
+.button:hover {
+   color:white;
+   text-decoration:none;
+}
 
+.buttonL {
+  margin:0% -8%;
+}
+.buttonR {
+  margin:0% 20%;
+}
 
-
-.section {
-  display: block;
+.name {
   width: auto;
   margin:10px 10px;
   height: auto;
-  background: black;
   padding: 10px;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
+  color: black;
 }
 #intro {
       background: url(https://github.com/bmbaron/FilesForFreeCodeCamp/blob/master/1614458_646285548760323_751417938_o.jpg?raw=true);
   background-size:cover;
 }  
 
+.colored {
+  color: white;
+}
 
-
-/*img {width=75%; height: 75%; } */
+.pic {
+  max-width:75%;
+  max-height:75%;
+  height: auto;
+  width:200px;
+  border: 5px solid black; 
+}
