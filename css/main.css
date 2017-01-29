@@ -109,7 +109,7 @@ a, a:hover, a:active, a:focus {
   color: black;
 }
 #intro {
-      background: url(https://github.com/bmbaron/FilesForFreeCodeCamp/blob/master/1614458_646285548760323_751417938_o.jpg?raw=true);
+      background: url(https://cdn.rawgit.com/bmbaron/FilesForFreeCodeCamp/master/1614458_646285548760323_751417938_o.jpg);
   background-size:cover;
 }  
 
