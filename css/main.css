@@ -1,7 +1,6 @@
 body, html {
   font-family:Rockwell;
   background-color:maroon;
-  color:white;
   text-decoration:none;
   overflow-x:hidden;
 
@@ -34,26 +33,34 @@ a, a:hover, a:active, a:focus {
 
 .panelLeft {
   position:fixed;
+  height:100%;
   z-index:1;
   
   width:17%;  
   top:0;
   margin-top:30px; 
   padding-right:1%;
-  left:-6.5%;
+  padding-top:1%;
+
+  left:-7.5%;
   
   background-color:grey;
   
   text-align:right;
   color:black;
+  font-size:20px;
+  border-radius:10px;
+  box-shadow: 3px 3px 5px 0px black;
+
 }
 
-.panelLeft:hover{
-  left:0;
+.panelLeft:hover .buttonL{
+	left:35%;
 }
 
 .panelRight {
   position:fixed;
+  height:100%;
   z-index:1;
     
   width: 17%;
@@ -61,44 +68,57 @@ a, a:hover, a:active, a:focus {
   margin-top:30px;
   right:-6.5%;
   padding-left:1%;
+  padding-top:1%;
+
 
   
   background-color:grey;
   
   text-align:left;
   color:black;
+  font-size:20px;
+  border-radius:10px;
+  box-shadow: -3px 3px 5px 0px black;
+
 }
 
-.panelRight:hover {
-  right:0;
+.panelRight:hover .buttonR {
+	right:4%;
 }
 
 .button {
-  width:140px;
+  width:150px;
   height:75px;
   padding:0px;
   z-index:2;
 
   display:block;
-  background:black;
+  background:maroon;
+  border-radius:10px;
   
-  font-size:12px;
   line-height:75px;
   text-decoration:none;
   color:white;
   text-align:center;
+  
+
 }
 
 .button:hover {
    color:white;
    text-decoration:none;
+   background-color:black;
 }
 
 .buttonL {
-  margin:0% -8%;
+    position:relative;
+	left:-1%;
+	box-shadow: 3px 3px 5px 0px black;
 }
 .buttonR {
-  margin:0% 41%;
+    position:relative;
+	right:-42%;
+	box-shadow: -3px 3px 5px 0px black;
 }
 
 .name {
@@ -123,4 +143,8 @@ a, a:hover, a:active, a:focus {
   height: auto;
   width:200px;
   border: 5px solid black; 
+}
+
+img {
+  box-shadow: 5px 5px 5px 0px black;
 }
