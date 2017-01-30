@@ -16,17 +16,6 @@ div.pagewidth {
   overflow:hidden;
 }
 
-.name {
-  font-size:40px;
-  margin-top:5%;
-}
-
-.quest {
-   padding-top:1%;
-  padding-bottom:2%;
-  font-size:20px;
-  text-align:right;
-}
 
 
 a, a:hover, a:active, a:focus {
@@ -125,16 +114,26 @@ a, a:hover, a:active, a:focus {
 }
 
 .name {
+  font-size:40px;
+  top:5%;
+  position:fixed;
   width: auto;
   margin:10px 10px;
   height: auto;
   padding: 10px;
   color: black;
+  left:30%;
 }
-#intro {
-      background: url(https://cdn.rawgit.com/bmbaron/FilesForFreeCodeCamp/master/1614458_646285548760323_751417938_o.jpg);
-  background-size:cover;
-}  
+
+.quest {
+  position:fixed;
+  top:15%;
+  font-size:30px;
+  padding-top:1%;
+  padding-bottom:2%;
+  font-size:20px;
+  right:30%;
+}
 
 .colored {
   color: white;
