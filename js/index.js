@@ -21,8 +21,8 @@ $(".pic").hover(function(){
 
 $(".pic").on("click", function(e) {
     
-    var githubPage = $(this).attr('id').toString();
-    window.open("https://bmbaron.github.io/" + githubPage);
+    var projectLink = $(this).attr('id').toString();
+    window.open(projectLink);
 
 });  
   
