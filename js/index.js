@@ -22,16 +22,14 @@ var width;
 $(".pic").hover(function(){
   $(this).css('cursor','pointer');
   $(this).css('cursor','hand');
-  
-  width = 2*$(this).width(); 
-  $(this).width(width); //make the image twice as big
-    
+  $(this).css('opacity','0.5');
+
 }, function(){  
   
-   width=.5*width; 
-   $(this).width(width); //return image back to original size
+  $(this).css('opacity','1');
+
     
-}); //end pic hover function 
+}); //end change opacity on hover function
 
 
 
