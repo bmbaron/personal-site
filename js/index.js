@@ -10,6 +10,7 @@ $(".contactFade").delay(2000).animate({ opacity: 1 }, 3000);
 
 $(".navigateFade").delay(1000).animate({ opacity: 0 }, 2000);
 $(".contactFade").delay(1000).animate({ opacity: 0 }, 1000);
+
 }
 
 
