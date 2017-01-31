@@ -51,4 +51,12 @@ img {
 	  background-size:200px 150px;
 }
 
+.copyright {
+  position:relative;
+  height:50px;
+  background:black;
+  line-height:50px;
+  margin-bottom:50px;
+  margin-top:50px;
 
+}
